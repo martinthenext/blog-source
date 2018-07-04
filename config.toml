@@ -1,0 +1,17 @@
+theme = "ghostwriter"
+baseurl = "https://martinthenext.github.io/"
+languageCode = "en-us"
+title = "Martin Davtyan"
+disqusShortname = "martindavtyan"
+copyright = "Martin Davtyan"
+publishdir = "martinthenext.github.io"
+
+[Author]
+name = "Martin Davtyan"
+profile = "http://davtyan.org"
+
+[Params]
+twitter = "https://twitter.com/dufft"
+github = "https://github.com/martinthenext"
+profile = "/images/dufft-cropped.gif"
+linkedin = "https://ch.linkedin.com/in/davtyan"

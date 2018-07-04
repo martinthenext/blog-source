@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Martin Davtyan</title>
+    <link>https://martinthenext.github.io/</link>
+    <description>Recent content on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fridges are magical - Fulham</title>
+      <link>https://martinthenext.github.io/post/fridge-fulham/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-fulham/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disqus comments</title>
+      <link>https://martinthenext.github.io/post/disqus/</link>
+      <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/disqus/</guid>
+      <description>Following this post, I made a decision to disable Disqus comments on this site to prevent tracking. The amount of tracking networks Disqus hooks up to their comment widget is crazy. I would like to keep both my personal website and this blog as cookie-free as possible.
+I also decided to not substitute the comment section with the Github hack, like the original post suggests. The reason is that, in my opinion, in parts of the internet I care about, productive discussions rarely happen in the immidiate place where the content was posted.</description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical - Islington</title>
+      <link>https://martinthenext.github.io/post/fridge-islington/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-islington/</guid>
+      <description>While I have been working on daytobase quite a bit recently, I am not ready to &amp;lsquo;release&amp;rsquo; it quite yet. So let me just post some fridge photos instead.</description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical - Saint Petersburg</title>
+      <link>https://martinthenext.github.io/post/fridge-spb/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-spb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ode to Hugo and itertools</title>
+      <link>https://martinthenext.github.io/post/hugo/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/hugo/</guid>
+      <description>If you are reading this, I actually succeeded in setting up Hugo for static site generation. It is written in Go, fast and cross-platform.
+Traditionally, I judge website designs by the way they can highlight code. This code, by the way, is the best thing I have seen in a year or so (originally from StackOverflow):
+def iter_split_by(n, iterator): &amp;quot;&amp;quot;&amp;quot; Split an iterator into groups of n elements Examples: &amp;gt;&amp;gt;&amp;gt; [i for i in iter_split_by(3, iter(range(10)))] [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]] &amp;quot;&amp;quot;&amp;quot; slices = (list(islice(iterator, n)) for _ in count()) return takewhile(bool, slices)  Look how lazy it is.</description>
+    </item>
+    
+    <item>
+      <title>String transformation with one example</title>
+      <link>https://martinthenext.github.io/post/transformy/</link>
+      <pubDate>Sun, 26 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/transformy/</guid>
+      <description>The recent post on Hacker News featured Transformy, an application that allows you to transform strings e.g., change date or name formatting, without having to program anything. Instead you give it an example by transforming one string from your batch. It tries to infer the rule that you used and apply it to all other strings.
+I was so excited about this I killed some time and reproduced similar functionality with a hudgred lines in Python, see here.</description>
+    </item>
+    
+    <item>
+      <title>NY times agrees</title>
+      <link>https://martinthenext.github.io/post/ny-times-agrees/</link>
+      <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/ny-times-agrees/</guid>
+      <description>This.
+Also, there is a recent meetup on using Watson in healthcare.</description>
+    </item>
+    
+    <item>
+      <title>Jung&#39;s personality types</title>
+      <link>https://martinthenext.github.io/post/jung/</link>
+      <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/jung/</guid>
+      <description>Collected Papers on Analytical Psychology (1920), very interesting and connects with ideas from ZAMM in various ways.
+To me, Bradbury&amp;rsquo;s Dandelion Wine is an ultimate introduction to extraversion and a description of a culture built on extraversion. Jung says in this interview that the U. S. is &amp;ldquo;extraverted like hell&amp;rdquo; :) Russia, on the contrary, seems culturally introverted to me.</description>
+    </item>
+    
+    <item>
+      <title>Pigeon drawing</title>
+      <link>https://martinthenext.github.io/post/pigeon-drawing/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/pigeon-drawing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Analysis of Federated Data</title>
+      <link>https://martinthenext.github.io/post/search/</link>
+      <pubDate>Tue, 18 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/search/</guid>
+      <description>There has been a lot of reading and searchnig recently, with no particular results. As people of science keep repeating, lack of results is a result in itself, so I&amp;rsquo;ll just write down what was happening to try to understand where to go further.
+I was trying to find a field of Statistics or Machine Learning which deals with data gathered from different data sources.
+ Asked the professor who deals with Missing Data.</description>
+    </item>
+    
+    <item>
+      <title>How to fix soft sciences (with example in medicine)</title>
+      <link>https://martinthenext.github.io/post/medicine/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/medicine/</guid>
+      <description>Any article with a shouting title like that is probably written by someone who has no idea about what he/she is talking about. At least this one is: I have a Computer Science/Engineering background and never been a researcher in any kind of soft science. Nevertheless, looking at soft sciences from technical prospective may result in some interesting insights. I personally found the idea behind this article so amazing it made me want to quit everything I was doing and do something about it.</description>
+    </item>
+    
+    <item>
+      <title>Direction for 2014</title>
+      <link>https://martinthenext.github.io/post/directions2014/</link>
+      <pubDate>Sat, 04 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/directions2014/</guid>
+      <description>As my &amp;lsquo;figuring out what to do in life&amp;rsquo; process seems to be neverending, which is annoying and great at the same time, keeping some direction in mind to think and work on can be hard. Not to feel completely lost in a sea of different interesting and exciting stuff I sometimes make attempts to systematize major things I&amp;rsquo;ve been thinking about for a long time to get a sense of where to go next.</description>
+    </item>
+    
+    <item>
+      <title>Nice grouping in Python</title>
+      <link>https://martinthenext.github.io/post/nice-grouping-in-python/</link>
+      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/nice-grouping-in-python/</guid>
+      <description>Just found another cute python recipe:
+In: l = [&#39;a&#39;, &#39;b&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;] In: [(group, l.count(group)) for group in set(l)] Out: [(&#39;a&#39;, 2), (&#39;c&#39;, 1), (&#39;b&#39;, 2)]  Because itertools.groupby is kind of clumsy for simple use cases.</description>
+    </item>
+    
+    <item>
+      <title>I love python</title>
+      <link>https://martinthenext.github.io/post/ilovepython/</link>
+      <pubDate>Mon, 09 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/ilovepython/</guid>
+      <description>This:
+&amp;gt;&amp;gt;&amp;gt;class some_class(object): ... def beep(self): ... print &#39;beep&#39; &amp;gt;&amp;gt;&amp;gt;# passing class as a parameter ...def do(cls): ... inst = cls() ... inst.beep() &amp;gt;&amp;gt;&amp;gt;do(some_class) beep  Also, sklearn is amazing - well documented and really easy to use.</description>
+    </item>
+    
+    <item>
+      <title>Ode to meritocracy</title>
+      <link>https://martinthenext.github.io/post/meritocrasy/</link>
+      <pubDate>Sun, 17 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/meritocrasy/</guid>
+      <description>Die Meistersinger von Nürnberg by Wagner:
+ Scorn not the Masters, I bid you,
+and honour their art!
+What speaks high in their praise
+fell richly in your favour.
+Not to your ancestors, however worthy,
+not to your coat-of-arms, spear, or sword,
+but to the fact that you are a poet,
+that a Master has admitted you -
+to that you owe today your highest happiness.
+ </description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical</title>
+      <link>https://martinthenext.github.io/post/fridge1/</link>
+      <pubDate>Fri, 15 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>https://martinthenext.github.io/post/food/</link>
+      <pubDate>Tue, 29 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/food/</guid>
+      <description>Now that it looks that the time I have to spend on cooking is about the same for healthy balanced foods and weird processed stuff, I&amp;rsquo;ve decided to start eating healthy. First, guess what, I&amp;rsquo;ve read a Wikipedia article called &amp;lsquo;Healthy diet&amp;rsquo;. Next, I&amp;rsquo;ve searched for some scientific books on the subject. In the end, I stumbled upon this article.
+Basically, the guy claims that science of nutrition is not developed enough to use it as a proper tool for choosing a diet.</description>
+    </item>
+    
+    <item>
+      <title>A post about innovation to remember</title>
+      <link>https://martinthenext.github.io/post/innovation/</link>
+      <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/innovation/</guid>
+      <description>Innovation Starvation by Neal Stephenson
+Brilliant explanation about how rational risk-averse behavior is in some sense opposite to innovation.</description>
+    </item>
+    
+    <item>
+      <title>Managing 21 Century Organizations</title>
+      <link>https://martinthenext.github.io/post/organizations/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/organizations/</guid>
+      <description>I&amp;rsquo;ve got interested in corporate network analysis and read an article called &amp;ldquo;Managing 21 Century Organizations&amp;rdquo; by Valdis Krebs. In his article he says:
+ If the knowledge that you seek is not within your network horizon (one or two steps), then you assume it is not available in your organization and you reinvent it, or pay for it on the outside.
+The natural response in many organizations is to throw technology at the problem.</description>
+    </item>
+    
+    <item>
+      <title>Internet</title>
+      <link>https://martinthenext.github.io/post/back-in-the-day/</link>
+      <pubDate>Fri, 18 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/back-in-the-day/</guid>
+      <description>Most of my life I&amp;rsquo;ve been pretty sure the internet is best source of any information, that I can access. Books from the internet were better than from my library, courses from MIT and Berkeley professors that I used to download in .mp3 were better than of my home university. Now that I moved to Zurich I see for the first time that there are cases when offline content is better than the internet - just because I&amp;rsquo;m in ETH.</description>
+    </item>
+    
+    <item>
+      <title>Zurich</title>
+      <link>https://martinthenext.github.io/post/h/</link>
+      <pubDate>Mon, 05 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/h/</guid>
+      <description>is an expensive city.</description>
+    </item>
+    
+    <item>
+      <title>R Cheat Sheet</title>
+      <link>https://martinthenext.github.io/post/computational-statistics-homework-explained/</link>
+      <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/computational-statistics-homework-explained/</guid>
+      <description>R Cheat Sheet for the Computational Statistics class at ETH.</description>
+    </item>
+    
+    <item>
+      <title>R Sweave Sublime Text build system</title>
+      <link>https://martinthenext.github.io/post/sweave-sublime/</link>
+      <pubDate>Thu, 23 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/sweave-sublime/</guid>
+      <description>To be able to edit R Sweave files in Sublime and render them to pdf&amp;rsquo;s with one click you can do the following.
+1. Create a batch file
+This run-sweave.bat file will take your Snw file as an argument and output a pdf to the same directory. It will also call Adobe Reader to preview the pdf, don&amp;rsquo;t forget to change the last part to your actual Adobe Reader path.</description>
+    </item>
+    
+    <item>
+      <title>To-do</title>
+      <link>https://martinthenext.github.io/post/todos/</link>
+      <pubDate>Tue, 24 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/todos/</guid>
+      <description>To try developing a file-based service as described in the previous post, I&amp;rsquo;ve considered several applications that could make use of storing information in text files. These should be application where reliability and accessibility of information is important.
+One of my first ideas was to implement a task/issue tracker. Issue tracking systems used by programmers are commonly installed on top of VCS (git, mercurial, etc), but function as ordinary websites, storing tickets and discussions in a relational databases.</description>
+    </item>
+    
+    <item>
+      <title>Files should be back!</title>
+      <link>https://martinthenext.github.io/post/file-based-systems/</link>
+      <pubDate>Wed, 13 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/file-based-systems/</guid>
+      <description>The core concept of document-oriented databases is that we have some a priori knowledge about a data structure of documents we store. For instance, in CouchDB or MongoDB we are aware that any document is an associative array. This knowledge allows us to query document sets with something like (get all documents where &#39;age&#39; attribute is 18) or (get all documents where &#39;published&#39; is True).
+File system is the best document DB ever The concept of scriptogr.</description>
+    </item>
+    
+    <item>
+      <title>Meta class inheritance in Django</title>
+      <link>https://martinthenext.github.io/post/meta-class-inheritance-django/</link>
+      <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/meta-class-inheritance-django/</guid>
+      <description>Here:
+&amp;gt;&amp;gt;&amp;gt; class alpha(object): class beta: sigma = 3 &amp;gt;&amp;gt;&amp;gt; class alpha2(alpha): class beta(alpha.beta): sigma = 4 delta = {&#39;a&#39;: 5} &amp;gt;&amp;gt;&amp;gt; a = alpha2() &amp;gt;&amp;gt;&amp;gt; a.beta.sigma 4  </description>
+    </item>
+    
+    <item>
+      <title>Django enumeration for model field choices</title>
+      <link>https://martinthenext.github.io/post/django-enum/</link>
+      <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/django-enum/</guid>
+      <description>The problem with supplying a Django model field with choices parameter is the way you check a value of that field in an object. You do nasty things like this:
+if model_instance.choice_field == 1:  The problem of getting rid of hard-coded numbers is recognized over the internet, but I haven&amp;rsquo;t found any short and understandable solution. The solution to this problem needs to work like this:
+&amp;gt;&amp;gt;&amp;gt; states = Enum(&#39;OPEN&#39;, &#39;CLOSED&#39;) &amp;gt;&amp;gt;&amp;gt; states.</description>
+    </item>
+    
+    <item>
+      <title>My first post (lame title, I know)</title>
+      <link>https://martinthenext.github.io/post/first-scriptogram/</link>
+      <pubDate>Wed, 14 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/first-scriptogram/</guid>
+      <description>All the time I&amp;rsquo;ve been using livejournal I&amp;rsquo;ve been concerned about two things:
+ Blog posts, which are of a great value to me, are stored on other people&amp;rsquo;s server I have no access to. If something went wrong with that server or servise my data would be unaccessible. That is why I&amp;rsquo;ve always considered running a stand-alone blog on my own server. No syntax highlighting for programming languages.  It seems like both issues are now solved by this very servise.</description>
+    </item>
+    
+    <item>
+      <title>Testing images</title>
+      <link>https://martinthenext.github.io/post/dropbox-images/</link>
+      <pubDate>Wed, 14 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/dropbox-images/</guid>
+      <description>This is a picture of what happened to me the first time I tried to host a file publicly on Dropbox and lots of people got to download it.
+Dropbox is not a proper image hosting.</description>
+    </item>
+    
+  </channel>
+</rss>

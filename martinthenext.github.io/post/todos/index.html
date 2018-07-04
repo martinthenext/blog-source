@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>To-do &middot; Martin Davtyan</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.42.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/normalize.css">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/highlight.css">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Martin Davtyan" href="https://martinthenext.github.io/">Martin Davtyan</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://martinthenext.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/dufft">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/martinthenext">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://ch.linkedin.com/in/davtyan">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">To-do</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2012-07-24" itemprop="datePublished">Tue, Jul 24, 2012</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+            <span itemprop="name">
+                <a href="http://davtyan.org" itemprop="url" rel="author">Martin Davtyan</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>To try developing a file-based service as described in the previous post, I&rsquo;ve considered several applications that could make use of storing information in text files. These should be application where reliability and accessibility of information is important.</p>
+
+<p>One of my first ideas was to implement a task/issue tracker. Issue tracking systems used by programmers are commonly installed on top of VCS  (git, mercurial, etc), but function as ordinary websites, storing tickets and discussions in a relational databases. Examples are TRAC, Mantis, RedMine, etc.</p>
+
+<p>The idea was to make stored information more reliable by using file system instead of relational databases. The problem is that an issue tracker is a fairly complex application, it&rsquo;s implementation can take a lot of time and it does not fit good enough for a proof-of-concept application.</p>
+
+<p>Recently, I have started looking at the ways people use textual data for personal task tracking. The simpliest application I&rsquo;ve discovered was <a href="http://todotxt.com/">todo.txt</a> - it is a set of simple services to help you edit your todo.txt file online. It is basically what I&rsquo;ve been thinking about: you sync it with your dropbox and you have all your information in text files. Their website says:</p>
+
+<blockquote>
+<p>Countless productivity apps and sites store your tasks in their own proprietary database and file format. But you can work with your todo.txt file in every text editor ever made, regardless of operating system or vendor.</p>
+</blockquote>
+
+<p>So yeah, basically, that&rsquo;s my idea.</p>
+
+<p>The second thing I&rsquo;ve found is far more interesting. It&rsquo;s called Emacs Org Mode and it&rsquo;s an editing mode for Emacs build for organizing tasks and making notes. The main idea is that making notes and creating tasks should be done together. Istead of having a special place for random notes and a separate place for tasks, you&rsquo;d rather highlight something in your notebook and mark it as a task. A list of talks can be found <a href="http://orgmode.org/talks.html">here</a>.</p>
+
+<p>Right now the idea of using Emacs as my quicknote application seems scary to me. I&rsquo;ve already found some Sublime Text plug-in that works the same way, will be looking into it.</p>
+
+<p>I&rsquo;ve also found that RStudio (and IDE for R programming language, probably the one I will be using extensively at ETHZ) is good for making notes. It supports LaTeX syntax (which org-mode also does) and MarkDown syntax (which org-mode doesn&rsquo;t). I&rsquo;ll be looking into this stuff for a while before I can decide what setup is the best.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="http://twitter.com/share?text=To-do&url=https%3a%2f%2fmartinthenext.github.io%2fpost%2ftodos%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinthenext.github.io%2fpost%2ftodos%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fmartinthenext.github.io%2fpost%2ftodos%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    <div class="comments">
+	    <p><em>Disqus comments have been disabled to <a href="//martinthenext.github.io/post/disqus/">prevent tracking</a>. Drop me a line! martindavtyan gmail com.</em></p>
+    </div>
+
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Martin Davtyan" href="https://martinthenext.github.io/">Martin Davtyan</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Powered by <a href="http://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://martinthenext.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="https://martinthenext.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://martinthenext.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

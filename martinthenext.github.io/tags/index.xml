@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Martin Davtyan</title>
+    <link>https://martinthenext.github.io/tags/</link>
+    <description>Recent content in Tags on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Sat, 22 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://martinthenext.github.io/tags/blog/</link>
+      <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fridges</title>
+      <link>https://martinthenext.github.io/tags/fridges/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/tags/fridges/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>https://martinthenext.github.io/tags/photos/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/tags/photos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://martinthenext.github.io/tags/python/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://martinthenext.github.io/tags/r/</link>
+      <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

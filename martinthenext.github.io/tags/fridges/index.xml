@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fridges on Martin Davtyan</title>
+    <link>https://martinthenext.github.io/tags/fridges/</link>
+    <description>Recent content in Fridges on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/tags/fridges/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fridges are magical - Fulham</title>
+      <link>https://martinthenext.github.io/post/fridge-fulham/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-fulham/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical - Islington</title>
+      <link>https://martinthenext.github.io/post/fridge-islington/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-islington/</guid>
+      <description>While I have been working on daytobase quite a bit recently, I am not ready to &amp;lsquo;release&amp;rsquo; it quite yet. So let me just post some fridge photos instead.</description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical - Saint Petersburg</title>
+      <link>https://martinthenext.github.io/post/fridge-spb/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge-spb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fridges are magical</title>
+      <link>https://martinthenext.github.io/post/fridge1/</link>
+      <pubDate>Fri, 15 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/fridge1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

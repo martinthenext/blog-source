@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Martin Davtyan</title>
+    <link>https://martinthenext.github.io/tags/python/</link>
+    <description>Recent content in Python on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Fri, 29 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ode to Hugo and itertools</title>
+      <link>https://martinthenext.github.io/post/hugo/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/hugo/</guid>
+      <description>If you are reading this, I actually succeeded in setting up Hugo for static site generation. It is written in Go, fast and cross-platform.
+Traditionally, I judge website designs by the way they can highlight code. This code, by the way, is the best thing I have seen in a year or so (originally from StackOverflow):
+def iter_split_by(n, iterator): &amp;quot;&amp;quot;&amp;quot; Split an iterator into groups of n elements Examples: &amp;gt;&amp;gt;&amp;gt; [i for i in iter_split_by(3, iter(range(10)))] [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]] &amp;quot;&amp;quot;&amp;quot; slices = (list(islice(iterator, n)) for _ in count()) return takewhile(bool, slices)  Look how lazy it is.</description>
+    </item>
+    
+    <item>
+      <title>Nice grouping in Python</title>
+      <link>https://martinthenext.github.io/post/nice-grouping-in-python/</link>
+      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/nice-grouping-in-python/</guid>
+      <description>Just found another cute python recipe:
+In: l = [&#39;a&#39;, &#39;b&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;] In: [(group, l.count(group)) for group in set(l)] Out: [(&#39;a&#39;, 2), (&#39;c&#39;, 1), (&#39;b&#39;, 2)]  Because itertools.groupby is kind of clumsy for simple use cases.</description>
+    </item>
+    
+    <item>
+      <title>I love python</title>
+      <link>https://martinthenext.github.io/post/ilovepython/</link>
+      <pubDate>Mon, 09 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/ilovepython/</guid>
+      <description>This:
+&amp;gt;&amp;gt;&amp;gt;class some_class(object): ... def beep(self): ... print &#39;beep&#39; &amp;gt;&amp;gt;&amp;gt;# passing class as a parameter ...def do(cls): ... inst = cls() ... inst.beep() &amp;gt;&amp;gt;&amp;gt;do(some_class) beep  Also, sklearn is amazing - well documented and really easy to use.</description>
+    </item>
+    
+    <item>
+      <title>Django enumeration for model field choices</title>
+      <link>https://martinthenext.github.io/post/django-enum/</link>
+      <pubDate>Thu, 15 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/django-enum/</guid>
+      <description>The problem with supplying a Django model field with choices parameter is the way you check a value of that field in an object. You do nasty things like this:
+if model_instance.choice_field == 1:  The problem of getting rid of hard-coded numbers is recognized over the internet, but I haven&amp;rsquo;t found any short and understandable solution. The solution to this problem needs to work like this:
+&amp;gt;&amp;gt;&amp;gt; states = Enum(&#39;OPEN&#39;, &#39;CLOSED&#39;) &amp;gt;&amp;gt;&amp;gt; states.</description>
+    </item>
+    
+  </channel>
+</rss>

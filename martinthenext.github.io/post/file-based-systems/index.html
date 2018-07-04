@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Files should be back! &middot; Martin Davtyan</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.42.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/normalize.css">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/highlight.css">
+        <link rel="stylesheet" href="https://martinthenext.github.io/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Martin Davtyan" href="https://martinthenext.github.io/">Martin Davtyan</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://martinthenext.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/dufft">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/martinthenext">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://ch.linkedin.com/in/davtyan">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Files should be back!</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2012-06-13" itemprop="datePublished">Wed, Jun 13, 2012</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+            <span itemprop="name">
+                <a href="http://davtyan.org" itemprop="url" rel="author">Martin Davtyan</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<p>The core concept of document-oriented databases is that we have some a priori knowledge about a data structure of documents we store. For instance, in CouchDB or MongoDB we are aware that any document is an associative array. This knowledge allows us to query document sets with something like <code>(get all documents where 'age' attribute is 18)</code> or <code>(get all documents where 'published' is True)</code>.</p>
+
+<h2 id="file-system-is-the-best-document-db-ever">File system is the best document DB ever</h2>
+
+<p>The concept of scriptogr.am got me thinking that a file system is a perfect document-oriented database. Not only it stores documents, reads/writes them by <code>id</code>, it has the most usable user interface ever - provided by the operating system. There are tons of cool tools for working with files and files remain perfectly interpretable no matter what happens to your  whole system.</p>
+
+<p>The only thing you need to add to a file system to make a document-oriented database of it is adding this a priori structure, allowing queries. In scriptogr.am it the file header containing metadata of a post. Every scriptogr.am post has such a header, so we can query posts with certain tags or sort them by date. To make queries work fast, of course, we will need to maintain some extra data structures (like b-trees) on top of posts folder, and index them. But our files with metadata remain completely unaffected by the way we make queries on them, it is  only the content they contain.</p>
+
+<p>Let us try to generalize a bit. Say we have some folder of files (text files, spreadsheets, anything <em>parsable</em>). We also have some a priori knowledge about the structure of a <em>any</em> document in that folder (for example, we know that the first line of a text file is a title, or column names in spreadsheets). This knowledge allows us to build a query system over the documents in that folder, and use this system to build useful services for navigating, searching or analyzing these files somehow.</p>
+
+<p>Access control is important. The limitation of a file system is you only can make restrictions to the file as a whole - the same way it works in document-oriented databases. If you need to build a service that has several access levels, you need to partition your files accordingly.</p>
+
+<p>Basically, from a query level on top of a document store you need:</p>
+
+<ul>
+<li>Document validation, to make sure every file you encounter in a folder has a right structure</li>
+<li>Data mapping, a procedure of extracting the queriable data out of a document</li>
+<li>Query engine, to make queries on mapped data</li>
+<li>Maintaining indexes, to make queries fast. Though, it is, obviously, not required to make queries.</li>
+</ul>
+
+<h2 id="using-couch">Using Couch</h2>
+
+<p>From all NoSQL databases I only have experience with CouchDB, but by far the most intuitive way I can imagine querying is:</p>
+
+<ol>
+<li>Data mapping procedure produces JSON document with queryable data for every document in the folder.</li>
+<li>Query engine runs map-reduce queries over these JSON documents.</li>
+</ol>
+
+<p>So, it appears that CouchDB is a solution for storing queryable data: it does all that querying and indexing stuff. We can now store all the queryable data in it, and maintain proper mapping between queryable data from documents and documents themselves. Once a document in a folder gets modified, we need to modify it&rsquo;s mapped queryable data accordingly. If we do that, CouchDB will take care of the rest and allow queries on this data.</p>
+
+<h2 id="roundup">Roundup</h2>
+
+<p>It is possible to build some sort of toolkit for turning any collection of structured files into document-oriented database. For a particular collection one needs to implement a routine that:</p>
+
+<ol>
+<li>Checks if a file has a proper structure</li>
+<li>In case it does, extracts the queryable information from it in JSON format</li>
+<li>Pushed JSON data to CouchDB (to a document with <code>id</code> matching the filename)</li>
+</ol>
+
+<p>I&rsquo;m pretty sure that CouchDB is not the solution that fits here. I also need to dig into dropbox&rsquo;s API docs to understand how to implement this routine using dropbox. Right now I&rsquo;m considering an ussue tracker application as a good &lsquo;proof of concept&rsquo; idea for this project. I&rsquo;ll try to think about it some more tomorrow, maybe come up with some more implementation ideas.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="http://twitter.com/share?text=Files%20should%20be%20back%21&url=https%3a%2f%2fmartinthenext.github.io%2fpost%2ffile-based-systems%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinthenext.github.io%2fpost%2ffile-based-systems%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fmartinthenext.github.io%2fpost%2ffile-based-systems%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    <div class="comments">
+	    <p><em>Disqus comments have been disabled to <a href="//martinthenext.github.io/post/disqus/">prevent tracking</a>. Drop me a line! martindavtyan gmail com.</em></p>
+    </div>
+
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Martin Davtyan" href="https://martinthenext.github.io/">Martin Davtyan</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Powered by <a href="http://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://martinthenext.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="https://martinthenext.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://martinthenext.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

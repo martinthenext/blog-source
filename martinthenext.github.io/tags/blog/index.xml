@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Martin Davtyan</title>
+    <link>https://martinthenext.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Sat, 22 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disqus comments</title>
+      <link>https://martinthenext.github.io/post/disqus/</link>
+      <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/disqus/</guid>
+      <description>Following this post, I made a decision to disable Disqus comments on this site to prevent tracking. The amount of tracking networks Disqus hooks up to their comment widget is crazy. I would like to keep both my personal website and this blog as cookie-free as possible.
+I also decided to not substitute the comment section with the Github hack, like the original post suggests. The reason is that, in my opinion, in parts of the internet I care about, productive discussions rarely happen in the immidiate place where the content was posted.</description>
+    </item>
+    
+  </channel>
+</rss>
