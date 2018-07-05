@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://martinthenext.github.io/post/making-text-search-learn-from-feedback/</loc>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://martinthenext.github.io/post/fridge-fulham/</loc>
     <lastmod>2017-10-17T00:00:00+00:00</lastmod>
   </url>
@@ -166,7 +171,13 @@
   
   <url>
     <loc>https://martinthenext.github.io/</loc>
-    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://martinthenext.github.io/tags/nlp/</loc>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -178,7 +189,7 @@
   
   <url>
     <loc>https://martinthenext.github.io/post/</loc>
-    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -197,6 +208,12 @@
   <url>
     <loc>https://martinthenext.github.io/tags/</loc>
     <lastmod>2017-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://martinthenext.github.io/tags/tutorial/</loc>
+    <lastmod>2018-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

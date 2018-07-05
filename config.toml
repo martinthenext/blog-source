@@ -2,7 +2,6 @@ theme = "ghostwriter"
 baseurl = "https://martinthenext.github.io/"
 languageCode = "en-us"
 title = "Martin Davtyan"
-disqusShortname = "martindavtyan"
 copyright = "Martin Davtyan"
 publishdir = "martinthenext.github.io"
 

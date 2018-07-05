@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nlp on Martin Davtyan</title>
+    <link>https://martinthenext.github.io/tags/nlp/</link>
+    <description>Recent content in Nlp on Martin Davtyan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Martin Davtyan</copyright>
+    <lastBuildDate>Wed, 04 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://martinthenext.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making text search learn from feedback (tutorial)</title>
+      <link>https://martinthenext.github.io/post/making-text-search-learn-from-feedback/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://martinthenext.github.io/post/making-text-search-learn-from-feedback/</guid>
+      <description>Proud to announce my introductory tutorial on hacking together a toy search engine made it into my beloved &amp;ldquo;build your own&amp;rdquo; list. The tutorial briefly explains basic concepts from Information Retrieval (vector space model, features, tf-idf, etc.) and proposes a simple, nearest neighbor-based approach to use relevance feedback in ranking. Check it out here.</description>
+    </item>
+    
+  </channel>
+</rss>
